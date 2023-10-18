@@ -1,0 +1,113 @@
+body{
+    margin: 0%;
+}
+.navigation-bar {
+    width: 300px;
+    height: 100vh;
+    background-color: #b8b0b0;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+}
+  
+  /* Open state styles */
+  .navigation-bar.open {
+    left: 0;
+  }
+
+  
+  /* Toggle button styles */
+  .toggle-button {
+    width: 50px;
+    height: 50px;
+    background-color: #776969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Sidebar Menu styles */
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu {
+    margin-top: 80px;
+  }
+  
+  .sidebar-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .sidebar-menu li a svg {
+    margin-right: 10px;
+  }
+  
+  /* Sidebar Menu Hover Effect */
+  .sidebar-menu li a:hover {
+    background-color: #277f73; 
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navigation-bar {
+      width: 250px;
+      left: -100%;
+    }
+  
+    .navigation-bar.open {
+      left: 0;
+    }
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #776969;
+    color: white;
+    height: 90px;
+}
+.logo{
+    width: 90px;
+    height: auto;
+}
+.header-item {
+    padding: 10px;
+}
+.header-item-profile-icon{
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+
+.ad {
+    text-align: right;
+}
+
